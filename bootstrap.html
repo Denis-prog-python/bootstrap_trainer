@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы с Bootstrap</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение Font Awesome для иконок социальных сетей -->
+    <script src="https://kit.fontawesome.com/326105a664.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Шоссейные велосипеды</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Основной контент -->
+<main class="py-5">
+    <section class="container">
+        <!-- Первая секция: Слайдер с фотографиями -->
+        <div id="carouselExampleControls" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bmc-timemachine-road-01-two-ultegra-di2-carbon-aero-bike-2023.jpeg" class="d-block w-100" alt="Первое фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="ahr0chm6ly9mb3rvcy5yzw5ucmfklw5ld3muzguvzjmvns81nzevntcxnda1lxi2n2k1mjz4amv0ns1iawfuy2hpx29sdhjllw9yawdpbmfslmpwzw.jpeg" class="d-block w-100" alt="Второе фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="ahr0chm6ly9mb3rvcy5yzw5ucmfklw5ld3muzguvzjmvns81nzevntcxmtuxlw05ywlscxrvymzqby1zxzbfnzg5mzjfnjc5ndiwx3nfmdatb3jpz2luywwuanbn.jpeg" class="d-block w-100" alt="Третье фото">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+        <!-- Вторая секция: Три карточки -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bmc-timemachine-road-01-two-ultegra-di2-carbon-aero-bike-2023.jpeg" class="card-img-top" alt="Первая карточка">
+                    <div class="card-body">
+                        <h5 class="card-title">BMC Timemachine Road
+</h5>
+                        <p class="card-text">КМодель BMC Timemachine Road была обновлена еще в 2019 году – выпускается вот уже четвертый год. С тех пор правила UCI были пересмотрены: теперь дизайнерам и специалистам по аэродинамике дают больше свободы. Это просматривается в основном в области рулевой и на вилках недавно представленных гоночных аэровелосипедов, которые зачастую имеют более плоский профиль, чем BMC. Только по этой причине и в связи с циклом производства в несколько лет можно предположить, что швейцарцы вскоре пересмотрят или обновят свой аэробайк. Если вы не хотите ждать так долго, то, конечно, можно воспользоваться текущим ассортиментом моделей. Он начинается с модели Timemachine Road 01 Three с групсетом SRAM Rival AXS и карбоновыми колесами и доходит до топовой модели Timemachine Road 01 One с Shimano Dura Ace Di2 и колесами DT Swiss ARC 1100.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="ahr0chm6ly9mb3rvcy5yzw5ucmfklw5ld3muzguvzjmvns81nzevntcxnda1lxi2n2k1mjz4amv0ns1iawfuy2hpx29sdhjllw9yawdpbmfslmpwzw.jpeg" class="card-img-top" alt="Вторая карточка">
+                    <div class="card-body">
+                        <h5 class="card-title">Bianchi Oltre RC
+</h5>
+                        <p class="card-text">В октябре прошлого года компания Bianchi представила полностью переработанный Oltre RC. Это невероятно привлекательный новый аэро-гоночный велосипед. Итальянцы называют свое последнее творение гипербайком и возвращаются с ним на международную гоночную арену в составе Team Arkéa - Samsic. Благодаря новому аэродинамическому кокпиту, воздушным дефлекторам на руле и бескомпромиссному аэродинамическому дизайну, Oltre RC стремится быть не менее чем на 17 ватт быстрее своего предшественника. Кроме того, при весе 6,85 кг (размер 55см), велосипед не превышает лимит веса UCI. Новый гоночный велосипед доступен в трех версиях: RC, Pro и Oltre, каждая из которых может быть оснащена различными групсетами. Самая доступная модель идет в сборе с Shimano 105 Di2 и колесами Velomann Carbon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="ahr0chm6ly9mb3rvcy5yzw5ucmfklw5ld3muzguvzjmvns81nzevntcxmtuxlw05ywlscxrvymzqby1zxzbfnzg5mzjfnjc5ndiwx3nfmdatb3jpz2luywwuanbn.jpeg" class="card-img-top" alt="Третья карточка">
+                    <div class="card-body">
+                        <h5 class="card-title">Cube Litening C:68X</h5>
+                        <p class="card-text">Модель Cube Litening C:68X была впервые представлена летом 2019 года. Она вступает в 2023 модельный год практически без изменений, но даже в базовой версии Litening Aero C:68X Pro получила преимущества от последней версии карбоновых колес Newmen Advanced SL R.50 Streem, которые произвели отличное впечатление во время нашего теста. Cube предлагает Litening в четырех различных вариантах, все с электронными трансмиссиями. Litening C:68X Pro начального уровня с электронной группой Force eTap AXS 2×12 и аэродинамическим кокпитом стоит 4 599 евро. Топовая модель с Shimano Dura Ace Di2, включая измеритель мощности (паверметр), предлагает отличное соотношение цены и качества при цене в €7 599.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Третья секция: Аккордеон -->
+        <div class="accordion mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Что входит в базовую комплектацию шоссейного велосипеда?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Базовая комплектация шоссейного велосипеда включает набор ключевых компонентов, обеспечивающих его функциональность и скоростные характеристики. Вот основные элементы:
+
+### 1. **Рама и вилка**
+   - **Рама**: Изготавливается из алюминия (бюджетные модели), карбона (средний и высокий уровень), реже — титана или хромомолибденовой стали. Геометрия рамы оптимизирована для аэродинамики и жесткости .
+   - **Вилка**: Обычно жесткая (ригидная), часто карбоновая для снижения веса и улучшения наката .
+
+### 2. **Трансмиссия (групсет)**
+   Включает:
+   - **Шатуны и передние звезды**: Двойные (например, 50/34T) или тройные системы (редко в современных моделях) .
+   - **Кассета и задний переключатель**: Количество звезд варьируется от 8 (Shimano Claris) до 12 (Shimano 105 R7100 и выше) .
+   - **Цепь**: Совместимая с количеством скоростей кассеты.
+   - **Манетки (шифтеры)**: Интегрированы с тормозными рычагами на руле .
+
+### 3. **Колеса и покрышки**
+   - **Колеса**: 28-дюймовые (700c) с узкими ободами. Бюджетные модели — алюминиевые, топовые — карбоновые .
+   - **Покрышки**: Ширина 23–28 мм (реже до 32 мм для эндуранс-моделей), высокое давление (8+ атм.) для минимизации сопротивления качению .
+
+### 4. **Тормозная система**
+   - **Ободные тормоза**: Клещевого типа (в бюджетных моделях) .
+   - **Дисковые тормоза**: Гидравлические или механические (в современных велосипедах среднего и высокого уровня) .
+
+### 5. **Руль и седло**
+   - **Руль**: "Бараний рог" (drop-bar) с изогнутой формой для аэродинамических позиций .
+   - **Седло**: Узкое и жесткое, с минимальной амортизацией для эффективного педалирования .
+
+### 6. **Прочие компоненты**
+   - **Педали**: Часто не входят в комплектацию — велосипедист выбирает контактные или платформенные отдельно .
+   - **Подседельный штырь**: Обычно алюминиевый или карбоновый, регулируемый по высоте .
+   - **Электроника**: В топовых моделях — беспроводное переключение (SRAM eTap, Shimano Di2) .
+
+### Что обычно **не входит** в базовую комплектацию:
+   - Крылья и багажники (редко встречаются на шоссейниках) .
+   - Велокомпьютер, фонари, насос (покупаются отдельно).
+
+### Вариации по уровню группсетов:
+   - **Начальный уровень**: Shimano Claris (8-скоростной), Sora (9-скоростной) .
+   - **Средний уровень**: Shimano 105 (12-скоростной), SRAM Rival .
+   - **Профессиональный уровень**: Shimano Dura-Ace, SRAM Red, Campagnolo Super Record .
+
+Для туристических или гравийных моделей комплектация может включать крепления для багажника и более широкие покрышки (до 35 мм) . Подробнее о различиях групсетов можно узнать из обзоров .
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Подходят ли шоссейные велосипеды для любителей или только профессиональным спортсменам?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Шоссейные велосипеды подходят не только профессионалам, но и любителям, если они регулярно катаются и предпочитают скоростные тренировки на асфальтовом покрытии. Такие велосипеды обладают облегчённой рамой, узкими колёсами и аэродинамической формой, что способствует быстрому передвижению на большие расстояния.
+
+Преимущества шоссейников для любителей:
+
+Хорошая управляемость и лёгкий вес велосипеда способствуют быстрой адаптации.
+Эффективная передача усилий и высокие скорости повышают уровень физической подготовки.
+Возможность участия в любительских соревнованиях и велозаездах.
+Но стоит помнить, что шоссейники требуют определённого уровня физической подготовки и навыков езды. Поэтому новичкам рекомендуется начинать с гибридных или горных велосипедов, чтобы освоить технику и повысить выносливость, а затем переходить на шоссейник.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        На какие параметры следует обратить внимание при покупке шоссейного велосипеда?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Покупая шоссейный велосипед, ориентируйтесь на собственные потребности и опыт езды. Начинающим пользователям рекомендуются велосипеды с хорошим уровнем комфорта и простым оборудованием, тогда как продвинутым спортсменам стоит выбирать профессиональные модели с максимальным набором функций и технологичных деталей.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <h5>Контактная информация</h5>
+                <address>
+                    Адрес: улица Велосипедная, дом 82<br>
+                    Телефон: +7 (123) 456-78-90<br>
+                    Email: velo@yandex.ru
+                </address>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <h5>Социальные сети</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" target="_blank"><i class="fab fa-vk"></i> VKontakte</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Поддержка</h5>
+                <p>Есть вопросы? Свяжитесь с нами!</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Подключаем Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
